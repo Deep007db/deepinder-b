@@ -1,5 +1,4 @@
 <script>
-// Smooth scroll for internal anchor links (if added)
 document.querySelectorAll('a[href^="#"]').forEach (anchor = > {
   anchor.addEventListener("click"), function(e) {
     e.preventDefault();
@@ -9,8 +8,6 @@ document.querySelectorAll('a[href^="#"]').forEach (anchor = > {
     }
   }
 }
-
-// Alert for broken or malformed project links
 document.querySelectorAll("a[href^='https://codepen.io']").forEach(link) =>{
   link.addEventListener("click"), function(e){
     const href = this.getAttribute("href");
